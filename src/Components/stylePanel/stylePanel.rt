@@ -1,0 +1,6 @@
+<rt-require dependency="./panel" as="panel"></rt-require>
+
+<panel style="background-color:red; color:white">
+  <h2>test 123</h2>
+  <p>bla bla</p>
+</panel>

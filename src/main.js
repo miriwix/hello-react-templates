@@ -16,7 +16,7 @@ requirejs.config({
     }
 });
 
-requirejs(['react', 'reactDOM', './Components/countryCity/countryCity'], function (React, ReactDOM, comp) {
+requirejs(['react', 'reactDOM', './Components/stylePanel/stylePanel'], function (React, ReactDOM, comp) {
     'use strict';
     ReactDOM.render(React.createElement(comp), document.getElementById('container'));
 });

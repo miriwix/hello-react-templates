@@ -1,0 +1,6 @@
+<div rt-props="{style: this.props.style}">
+  {this.props.children}
+  <button style="position: absolute; right: 0; bottom: 0; width: 100px; height: 100px"></button>
+</div>
+
+
