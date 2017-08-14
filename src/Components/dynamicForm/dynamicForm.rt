@@ -1,0 +1,23 @@
+<div>
+  <form>
+    <div rt-repeat="field in this.state.formFields" key="{field.key}">
+      {field.name} :
+      <input type="{field.type}" name="{field.name}" onChange="(e) =>  { this.handleChange(e.target.value, field); }"/>
+    </div>
+  </form>
+  <form>
+    Add new fields:
+    <div>
+      Field Name:
+      <input type="text" name="inputName" id="inputName"/>
+      Field Type:
+      <select name="inputType" id="inputType">
+        <option value="text">text</option>
+        <option value="number">number</option>
+        <option value="email">email</option>
+      </select>
+      <button onClick="(e) => {e.preventDefault(); this.addNewField()}">+</button>
+    </div>
+  </form>
+</div>
+

@@ -1,0 +1,14 @@
+<div>
+  <form>
+    <select name="countriesSelect" id="countriesSelect" onChange="(e) =>  { this.updateSelectedCountry(); }">
+      <option disabled selected value style="display:none"/>
+      <option rt-repeat="country in this.state.countries" key="{country.key}" value="{country.name}">{country.name}</option>
+    </select>
+    <select onChange="(e) =>  { this.updateSelectedCity(e.target.value); }">
+      <option disabled selected value style="display:none"/>
+      <option rt-if="this.state.selectedCountry" rt-repeat="city in this.state.selectedCountry.cities" key="{city}" value="{city}">{city}</option>
+    </select>
+    <button disabled="{this.state.isDisabled}"></button>
+  </form>
+</div>
+

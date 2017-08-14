@@ -1,0 +1,8 @@
+<div>
+  <form>
+    <input key="lat" name="lat" type="number" placeholder="lat" onChange="(e) =>  { this.handleChange(e.target.value, e.target.name); }"/>
+    <input key="long" name="long" type="number" placeholder="long" onChange="(e) =>  { this.handleChange(e.target.value, e.target.name); }"/>
+  </form>
+  <span>ShaiK is over-reacting at ({this.state.location.long},{this.state.location.lat})</span>
+</div>
+

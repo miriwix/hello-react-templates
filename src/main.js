@@ -16,7 +16,7 @@ requirejs.config({
     }
 });
 
-requirejs(['react', 'reactDOM', './hello'], function (React, ReactDOM, hello) {
+requirejs(['react', 'reactDOM', './Components/countryCity/countryCity'], function (React, ReactDOM, comp) {
     'use strict';
-    ReactDOM.render(React.createElement(hello), document.getElementById('container'));
+    ReactDOM.render(React.createElement(comp), document.getElementById('container'));
 });
