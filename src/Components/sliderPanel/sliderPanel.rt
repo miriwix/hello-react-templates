@@ -1,0 +1,7 @@
+<div>
+  Height: <input type="range" min="0" max="300" onChange="(e) =>  { this.changeHeight(e.target.value); }"/>
+  Vertical Padding: <input type="range" min="0" max="100" onChange="(e) =>  { this.changePadding(e.target.value); }"/>
+  <div style="{{'padding': '0 '+ this.state.vPadding , 'height': this.state.height , 'width': '500px', 'background-color': 'lightblue'}}"></div>
+</div>
+
+
